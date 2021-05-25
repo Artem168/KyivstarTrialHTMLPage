@@ -1,0 +1,131 @@
+@import "variables";
+
+html, body {
+  font-size: 16px;
+  margin: 0;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+#header {
+  background: $base-color;
+  height: 5rem;
+  color: white;
+}
+
+.options {
+  padding: 3rem 5%;
+  display: flex;
+  justify-content: space-between;
+
+  .option {
+    /*border: 1px solid $base-border-color;*/
+    box-shadow: 0px 2px 1rem $base-border-color;
+
+    .image-block {
+      height: 7rem;
+      background-image: url("https://cdn.kyivstar.ua/sites/default/files/kv_smart_business_arrow__0.png");
+      background-size: 100% 100%;
+    }
+
+    .option-content {
+      padding: 1.5rem 8%;
+
+      .second-unit {
+        margin-top: 0.8rem;
+      }
+      > p {
+        font-size: $p-font-size;
+      }
+      .unit {
+        font-size: 2.2rem;
+      }
+      .unit-name {
+        font-size: 1.1rem;
+      }
+      ul {
+        min-height: 6rem;
+        padding-left: 0;
+        list-style-type: none;
+
+        li {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-right: 1.2rem;
+          }
+
+          span {
+            line-height: 1rem;
+            font-size: $p-font-size;
+          }
+        }
+      }
+    }
+
+    .option-footer {
+      border-top: 2px solid $base-border-color;
+      padding: 1.5rem 8%;
+      text-align: center;
+
+      .crossed {
+        color: gray;
+        text-decoration: line-through;
+        font-weight: bold;
+      }
+
+      .price {
+        font-size: 1.6rem;
+      }
+      button {
+        background: $base-color;
+        color: white;
+        border-radius: 1.7rem;
+        width: 100%;
+        padding: 10px 10px;
+        font-size: 1.1rem;
+        border: none;
+        margin: 1rem auto;
+        &:hover {
+          background: #177cd7;
+          cursor: pointer;
+        }
+      }
+
+      .link-more {
+        color: $base-color;
+        font-size: $p-font-size;
+        position: relative;
+        padding-right: 1.2rem;
+        cursor: pointer;
+
+        .part-2 {
+          position: absolute;
+          right: 0rem;
+          top: 0rem;
+          transition: right 0.2s linear;
+        }
+        &:hover .part-2 {
+          right: -1rem;
+        }
+      }
+    }
+
+  }
+}
+
+/*.options > div {
+  /*width: 25%;*/
+  /*float: left;*/
+  /*padding: 0 1rem;
+}*/

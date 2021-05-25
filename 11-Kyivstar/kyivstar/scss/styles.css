@@ -1,0 +1,104 @@
+html, body {
+  font-size: 16px;
+  margin: 0;
+  font-family: 'Arial', 'Helvetica', sans-serif; }
+
+div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+p {
+  margin: 0; }
+
+#header {
+  background: #3297f1;
+  height: 5rem;
+  color: white; }
+
+.options {
+  padding: 3rem 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .options .option {
+    /*border: 1px solid $base-border-color;*/
+    -webkit-box-shadow: 0px 2px 1rem #dddddd;
+            box-shadow: 0px 2px 1rem #dddddd; }
+    .options .option .image-block {
+      height: 7rem;
+      background-image: url("https://cdn.kyivstar.ua/sites/default/files/kv_smart_business_arrow__0.png");
+      background-size: 100% 100%; }
+    .options .option .option-content {
+      padding: 1.5rem 8%; }
+      .options .option .option-content .second-unit {
+        margin-top: 0.8rem; }
+      .options .option .option-content > p {
+        font-size: 0.85rem; }
+      .options .option .option-content .unit {
+        font-size: 2.2rem; }
+      .options .option .option-content .unit-name {
+        font-size: 1.1rem; }
+      .options .option .option-content ul {
+        min-height: 6rem;
+        padding-left: 0;
+        list-style-type: none; }
+        .options .option .option-content ul li {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .options .option .option-content ul li img {
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-right: 1.2rem; }
+          .options .option .option-content ul li span {
+            line-height: 1rem;
+            font-size: 0.85rem; }
+    .options .option .option-footer {
+      border-top: 2px solid #dddddd;
+      padding: 1.5rem 8%;
+      text-align: center; }
+      .options .option .option-footer .crossed {
+        color: gray;
+        text-decoration: line-through;
+        font-weight: bold; }
+      .options .option .option-footer .price {
+        font-size: 1.6rem; }
+      .options .option .option-footer button {
+        background: #3297f1;
+        color: white;
+        border-radius: 1.7rem;
+        width: 100%;
+        padding: 10px 10px;
+        font-size: 1.1rem;
+        border: none;
+        margin: 1rem auto; }
+        .options .option .option-footer button:hover {
+          background: #177cd7;
+          cursor: pointer; }
+      .options .option .option-footer .link-more {
+        color: #3297f1;
+        font-size: 0.85rem;
+        position: relative;
+        padding-right: 1.2rem;
+        cursor: pointer; }
+        .options .option .option-footer .link-more .part-2 {
+          position: absolute;
+          right: 0rem;
+          top: 0rem;
+          -webkit-transition: right 0.2s linear;
+          transition: right 0.2s linear; }
+        .options .option .option-footer .link-more:hover .part-2 {
+          right: -1rem; }
+
+/*.options > div {
+  /*width: 25%;*/
+  /*float: left;*/
+  /*padding: 0 1rem;*/
+
+/*# sourceMappingURL=styles.css.map */
